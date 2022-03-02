@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- TODO: Replace this with your title -->
+    <title>Isaiah's Portfolio</title>
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+    	https://getbootstrap.com/docs/5.1/getting-started/introduction 
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Note to grader: I used VSCode to format this, so I am sorry if it looks wonky in replit-->
+    <!-- Sizzle: I don't know if it counts but I used a mailto: in the contact section-->
+
+    <!-- TODO: Paste Navbar code and customize links -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-boombox-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-current="page" href="#mission-section">Mission</a>
+                    <a class="nav-link" href="#skills-section">Skills</a>
+                    <a class="nav-link" href="#inspiration-section">Inspiration</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <section id="hero-section" class="text-center px-4 py-5 mt-5">
+        <h1 class="text-white section-header">Isaiah Elder</h1>
+        <div id="headshot-container">
+            <img src="assets/face.png" alt="A picture of Isaiah." id="headshot" class="d-block mx-auto mb-4">
+        </div>
+    </section>
+
+    <!-- Mission/Meet-me section -->
+    <section id="mission-section" class="py-5 text-light">
+        <h1 class="text-center mb-5 mt-3 section-header">Meet Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="container">
+                        <img src="assets/face2.png" alt="A picture of Isaiah with red and blue lighting."
+                            id="mission-photo" class="d-block mx-auto mb-4">
+                    </div>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center">
+                    <p class="text-center">I am currently a junior studying computer science at Arizona State
+                        University. My aspirations
+                        after
+                        graduation are to go into either full-stack or front end software development. The main mission
+                        is to be able to
+                        continue to create interesting and fun projects with computers. I am very passionate about
+                        learning new technologies, languages, frameworks, and all things software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills-section" class="py-5 text-light">
+        <h1 class="h1 text-center mb-5 mt-3 section-header">Skills</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="assets/cpp.png" alt="Logo for C++ programming language."
+                        class="icon d-block mx-auto mb-4">
+                    <p class="text-center">Creating powerful and efficient programs with the object oriented C++
+                        programming languge.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="assets/html.png" alt="Logo for the hypertext markup language."
+                        class="icon d-block mx-auto mb-4">
+                    <p class="text-center">Laying the groundwork for webpages with hypertext markup language.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="assets/css.png" alt="Logo for cascading style sheets." class="icon d-block mx-auto mb-4">
+                    <p class="text-center">Adding personality to webpages with cascading style sheets.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="assets/bootstrap.png" alt="Logo for bootstrap library." class="icon d-block mx-auto mb-4">
+                    <p class="text-center">Creating stunning responsive webpages using the Bootstrap library.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section id="inspiration-section" class="py-5 text-light">
+        <h1 class="text-center mb-5 mt-3 section-header">Inspriation</h1>
+        <div class="container mb-5">
+            <div id="carouselExampleCaptions" class="carousel slide d-block mx-auto mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/jayz.png" class="d-block" alt="A picture of Jay Z in black and white.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="h6 text-light bg-dark mb-0">“Rosa Parks sat so Martin Luther King could walk.
+                                Martin Luther King walked so Obama
+                                could
+                                run. Obama's running so we all can fly.”</h6>
+                            <p class="text-light bg-dark">Jay Z</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/mikej.jpg" class="d-block"
+                            alt="A picture of michael jordan with a bulls jersey on.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="h6 text-light bg-dark mb-0">“I never looked at the consequences of missing a big
+                                shot ... when you think about the consequences, you always think of negative results.”
+                            </h6>
+                            <p class="text-light bg-dark">Michael Jordan</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/peggy.jpg" class="d-block" alt="A picture of jpegmafia.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h6 class="h6 text-light bg-dark mb-0">"We need true free thinkers, people who really say
+                                what they feel and have good, genuine
+                                intentions."</h6>
+                            <p class="text-light bg-dark">JPEGMAFIA</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="py-5 text-light">
+        <h1 class="h1 text-center mb-5 mt-3 section-header">Contact</h1>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-sm-4 link">
+                    <h1 class="text-center display-3"><a href="https://github.com/IsaiahGit"><i
+                                class="bi bi-github"></i></a></h1>
+                </div>
+                <div class="col-sm-4 link">
+                    <h1 class="text-center display-3"><a href="https://www.linkedin.com/in/isaiah-elder-056322204/"><i
+                                class="bi bi-linkedin"></i></a></h1>
+                </div>
+                <div class="col-sm-4 link">
+                    <h1 class="text-center display-3"><a href="mailto: isaiahcelder@gmail.com"><i
+                                class="bi bi-envelope"></i></a></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section id="footer-section">
+        <div class="container my-2 py-2">
+            <h5 class="text-center text-light">© Isaiah Elder 2022</h5>
+        </div>
+    </section>
+
+    <!-- 
+		TODO: Paste Bootstrap Javascript script tag from:
+		https://getbootstrap.com/docs/5.1/getting-started/introduction/
+	-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
