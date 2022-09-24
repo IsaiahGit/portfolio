@@ -4,7 +4,7 @@ body{
     background-color: black;
 }
 #hero-section{
-    background-image: url("assets/blackpanthers.jpg");
+    background-color: #006630;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
